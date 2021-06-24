@@ -8,6 +8,6 @@ Task:
   5. Input full filepath to copy only names of products.
 
 Project files: 
-  mainCW.c - program file;
-  product.txt - input file for loading array of structs Product (p.2);
-  product_out.txt - example of output file (p. 5).
+  1. mainCW.c - program file;
+  2. product.txt - input file for loading array of structs Product (task p.2);
+  3. product_out.txt - example of output file (task p. 5).
