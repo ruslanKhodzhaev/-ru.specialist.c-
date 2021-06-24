@@ -1,4 +1,3 @@
-// C:\C\project\product.txt
 #include <stdio.h>
 #include <string.h>
 #include <conio.h>
@@ -19,7 +18,7 @@ int create_shop_by_filepath (struct product ** shop, char filepath[])
 	if (f == NULL) 
 	{
 		printf("File not found!");
-		 exit(99);
+		exit(99);
 	}
 	
 	int product_array_size = 1, iterations_count = 0;
@@ -32,7 +31,7 @@ int create_shop_by_filepath (struct product ** shop, char filepath[])
 		fscanf(f, "%f", &(*shop + iterations_count) -> price);
 		iterations_count++;
 		product_array_size++;
-		*shop = (struct product *) realloc (*shop, product_array_size * sizeof(struct product));
+		* shop = (struct product *) realloc (*shop, product_array_size * sizeof(struct product));
 	} while (getc(f) != EOF);
 
 	fclose(f);
